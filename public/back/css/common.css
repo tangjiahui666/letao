@@ -19,7 +19,9 @@ a:link,a:visited,a:hover,a:active{
 .body_bg{
   background-color: #222d32;
 }
-
+.md_20{
+  margin-bottom:20px;
+}
 .mt_150{
   margin-top: 150px;
 }
