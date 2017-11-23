@@ -99,6 +99,12 @@ $(function(){
                 $("#addModal").modal("hide");
                 currentPage = 1;
                 render();
+                $form[0].reset();
+                $(form).data("bootstrapValidator").resetForm();
+                $(".dropdown-text").text("请选择一级分类");
+                $("[name='categoryId']").val("");
+                $(".img_box img").attr("src","images/none.png");
+                $("[name='brandLogo']").val("");
                   }
               }
           })
