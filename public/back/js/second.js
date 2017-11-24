@@ -41,7 +41,7 @@ $(function(){
         });
     });
     $(".dropdown-menu").on("click","a",function(){
-        console.log($(this).data("id"));
+        // console.log($(this).data("id"));
         $(".dropdown-text").text($(this).text());
         $("[name='categoryId']").val($(this).data("id"));
         $form.data("bootstrapValidator").updateStatus("categoryId","VALID");
@@ -88,7 +88,8 @@ $(function(){
               }
           }
     });
-      $form.on("success.form bv",function(e){
+      $form.on("success.form.bv",function(e){
+        //   console.log(1111);
           e.preventDefault();
           $.ajax({
             type: "post",
