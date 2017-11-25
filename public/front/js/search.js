@@ -58,5 +58,6 @@ $(function(){
          render();
 
          //跳转页面
+         location.href="searchList.html?key="+key;
      })
-})
+});
